@@ -1,0 +1,6 @@
+<h3>ng-conf notes</h3>
+<ul>
+  <li *ngFor="let note of noteList">
+    <a [routerLink]="['Note', {name: note.key}]">{{note.name}}</a>
+  </li>
+</ul>

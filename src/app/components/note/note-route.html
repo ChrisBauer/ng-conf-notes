@@ -1,0 +1,3 @@
+<a [routerLink]="['Notes']">Back</a>
+<h1 class="title">{{note ? note.name : ''}}: <span>Day {{note ? note.day : ''}}</span></h1>
+<div [innerHTML]="md | markdown"></div>

@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
 import {FORM_PROVIDERS} from '@angular/common';
+import {HTTP_PROVIDERS} from '@angular/http';
 
 import '../style/app.scss';
 
 import {Api} from './services/api/api';
-import {Home} from './components/home/home';
-import {About} from "./components/about/about";
+import {NotesService} from './services/notes.service';
+import {Notes} from "./components/notes/notes";
+import {NoteRoute} from "./components/note/note-route";
 
 /*
  * App Component
@@ -14,15 +16,15 @@ import {About} from "./components/about/about";
  */
 @Component({
   selector: 'app', // <app></app>
-  providers: [...FORM_PROVIDERS, Api],
+  providers: [...FORM_PROVIDERS, ...HTTP_PROVIDERS, Api, NotesService],
   directives: [...ROUTER_DIRECTIVES],
   pipes: [],
   styles: [require('./app.scss')],
   template: require('./app.html')
 })
 @RouteConfig([
-  {path: '/', component: Home, name: 'Home'},
-  {path: '/About', component: About, name: 'About'}
+  {path: '/', component: Notes, name: 'Notes'},
+  {path: '/:name', component: NoteRoute, name: 'Note'}
 ])
 export class App {
   url: string = 'https://github.com/preboot/angular2-webpack';

@@ -8,14 +8,14 @@ import {
 
 import { TestComponentBuilder } from '@angular/compiler/testing';
 
-import {About} from './about';
+import {Notes} from './notes';
 
-describe('About Component', () => {
+describe('Notes Component', () => {
 
   beforeEachProviders(() => []);
 
   it('should ...', async(inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-    tcb.createAsync(About).then((fixture) => {
+    tcb.createAsync(Notes).then((fixture) => {
       fixture.detectChanges();
     });
   })));
