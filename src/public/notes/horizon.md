@@ -20,10 +20,11 @@ Quickly prototype app, then scale.
 
 ### Horizon Stack
 
-|==Title==|==Service==|
-|-Front End-|-Horizon Client-|
-|-Middle-|  |
-| Backend | RethinkDB |
+|        Title       |       Service     |
+|--------------------|-------------------|
+| Front End          | Horizon Client    |
+| Middleware         | (anything!)       |
+| Backend            | RethinkDB         |
 
 Front-end framework-agnostic
 Full-stack realtime updates using RethinkDB, WebSockets, and Observables

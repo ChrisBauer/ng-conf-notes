@@ -1,0 +1,19 @@
+
+- TJ VanToll
+- Jen Looper
+
+Telerik Nativescript
+
+Groceries management application
+
+- Write once run everywhere
+- Native mobile app using Angular 2 and JavaScript
+- Much more time 201.9 to 10.9 minutes spent in mobile native app vs. mobile web app
+- Luke wroblewski quote native apps and mobile web apps web is for reach native is for richness
+- Amuse Boucher for web and mobile
+- Notation similar to JavaScript, but translated to the native application code compilation. Refers to controls and components that are common to native applications, not web.
+- Styling appears the same syntax, but this is not true cuss and is similar in syntax but not CSS.
+- Service layer is angular XMLHttpRequest, and both applications can use this the same, and the data is not particular to a UI usage
+- Routing in a NativeScript application is similar to that in Angular, and tracks where in the application the user has navigated.
+- Refreshing is simpler, and so is scrolling and sliding to use the capabilities of the device and the UI
+- Completely separate language, and not JavaScript, so there would be need to learn new syntax and libraries, and not the same as common JavaScript and Angular, but a hybrid.

@@ -13,7 +13,7 @@ import 'rxjs/Rx';
 })
 export class Notes implements OnInit {
   
-  noteList: Array<Note> = [];
+  noteList: Array<Array<Note>> = [];
 
   constructor(private notesService : NotesService) {
     // Do stuff
@@ -21,7 +21,10 @@ export class Notes implements OnInit {
 
   ngOnInit() {
     this.notesService.getNotes()
-      .then(notes => this.noteList = notes);      
+      .then(notes => {
+        console.log(notes);
+        this.noteList = notes
+      });      
   }
 
 }

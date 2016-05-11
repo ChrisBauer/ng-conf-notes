@@ -8,12 +8,18 @@ a {
     color: #03A9F4;
 }
 
-ul {
-  list-style-type: none;
+ul li {
+    list-style-type: none;
+  margin: 10px;
   
-  li:before {
-    content: '- ';
+  &:before {
+      
+  content: '- ';
   }
+}
+
+table {
+    width: 100%;
 }
 
 body {
@@ -69,14 +75,6 @@ code {
 
 table {
 	text-align: left;
-}
-
-li {
-	list-style-type: none;
-	&:before {
-		content: '-';
-		margin: 10px;
-	}
 }
 
 anchor, .anchor-wrapper {

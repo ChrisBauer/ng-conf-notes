@@ -65,4 +65,40 @@ plugin implements an `apply(compiler)` function
  - other stuff
 
 ### Webpack and Angular 2
+
 [Angular 2 Webpack Lite](github.com/thelarkinn/angular2-webpack-lite)
+@TheLarkInn
+
+Webpack is a module bundler, not a task runner
+
+Works with any type of module.
+
+3 Ways to Use Webpack
+ - config
+ - webpack cli
+ - node API
+
+##### Concepts
+
+1. Entry
+  1. "contextual root", entry file is the file that kicks off your whole site (app.js?)
+  2. can define external deps on entry
+  3. can define different bundles (web, mobile, desktop, etc.)
+  4. Look up what "Vendors" means
+2. Output
+  1. path
+  2. filename
+  3. Will create a single JS file, concatenated of everything (CSS, JS, images?)
+3. Loaders
+  1. Loaders tell webpack how to load something
+  2. Can include and exclude folders
+  3. ex. pass LESS -> CSS -> JS -> inline JS
+4. Plugins
+  1. ES5 Class
+  2. Implements one function on prototype chain, apply().
+  3. A compilation is a bundle of files processed by webpack
+  
+Example Plugins:
+ - UglifyJSPlugin()
+
+http://github.com/thelarkinn/angular2-webpack-lite

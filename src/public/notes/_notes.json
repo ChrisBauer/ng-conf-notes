@@ -1,17 +1,137 @@
 [
     {
-        "name": "webpack",
+        "name": "Auth0",
+        "day": 2,
+        "key": "auth0"
+    },
+    {
+        "name": "Day 1 Keynote",
+        "day": 1,
+        "key": "day-1-keynote"
+    },
+    {
+        "name": "Components and Angular 1.5",
+        "day": 1,
+        "key": "components-in-1.5"
+    },
+    {
+        "name": "Angular 2: Router",
+        "day": 1,
+        "key": "angular-2-router"
+    },
+    {
+        "name": "Angular 2 with John Papa",
+        "day": 1,
+        "key": "john-papa"
+    },
+    {
+        "name": "Angular 2's Fresh Approach to Style",
+        "day": 1,
+        "key": "angular-2-style"
+    },
+    {
+        "name": "Typescript with Dan Wahlen",
+        "day": 1,
+        "key": "typescript-with-dan"
+    },
+    {
+        "name": "Angular Universal Patterns",
+        "day": 1,
+        "key": "angular-universal"
+    },
+    {
+        "name": "Angular Material: Titanium Octopus",
+        "day": 1,
+        "key": "angular-material"
+    },
+    {
+        "name": "Augury (formerly Batarangle)",
+        "day": 1,
+        "key": "augury"
+    },
+    {
+        "name": "Functional Reactive Programming in Angular 2",
+        "day": 1,
+        "key": "functional-reactive-javascript"
+    },
+    {
+        "name": "Testing your Tasks",
+        "day": 1,
+        "key": "testing-your-tasks"
+    },
+    {
+        "name": "Progressive Web Apps",
+        "day": 1,
+        "key": "progressive-webapps"
+    },
+    {
+        "name": "Rockin' Round the Docs",
+        "day": 1,
+        "key": "rockin-round-the-docs"
+    },
+    {
+        "name": "Webpack",
         "day": 2,
         "key": "webpack"
     },
     {
-        "name": "horizon",
+        "name": "Day 2 Keynote",
+        "day": 2,
+        "key": "day-2-keynote"
+    },
+    {
+        "name": "Component Router",
+        "day": 2,
+        "key": "component-router"
+    },
+    {
+        "name": "Horizon",
         "day": 2,
         "key": "horizon"
     },
     {
-        "name": "reactive x",
+        "name": "ReactiveX",
         "day": 3,
         "key": "reactive-x"
+    },
+    {
+        "name": "NG Animate",
+        "day": 3,
+        "key": "ng-animate"
+    },
+    {
+        "name": "Typescript",
+        "day": 3,
+        "key": "typescript"
+    },
+    {
+        "name": "Angular 2 in 60 Minutes",
+        "day": 2,
+        "key": "angular-2-in-60-minutes"
+    },
+    {
+        "name": "Angular 1.x Performance",
+        "day": 3,
+        "key": "angular-1-x-performance"
+    },
+    {
+        "name": "Google Cloud Platform",
+        "day": 2,
+        "key": "google-cloud"
+    },
+    {
+        "name": "Sharing Code Between Web and Native",
+        "day": 1,
+        "key": "sharing-code-between-web-and-native"
+    },
+    {
+        "name": "Isolating and Improving Performance in Angular 1.x",
+        "day": 2,
+        "key": "isolating-and-improving-performance"
+    },
+    {
+        "name": "Unit Testing Angular 2",
+        "day": 2,
+        "key": "unit-testing-angular-2"
     }
 ]

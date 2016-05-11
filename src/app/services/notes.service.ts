@@ -4,15 +4,26 @@ import { HTTP_PROVIDERS, Http, Response } from '@angular/http';
 
 @Injectable()
 export class NotesService {
-    notes: Promise<Array<Note>>;
+    notes: Promise<Array<Array<Note>>>;
     
     constructor (private http: Http) {
         this.notes = this.http.get('/notes/_notes.json')
             .map(res => {
-                return res.json(); 
+                return res.json();
             })
             .toPromise()
-            .then(notes => notes.sort((a, b) => a.day > b.day));
+            .then(notes => {
+                return notes.reduce((acc, note) => {
+                    let index: number = note.day - 1;
+                    if (acc[index]) {
+                        acc[index].push(note);
+                    }
+                    else {
+                        acc[index] = [note];
+                    }
+                    return acc;
+                }, []);
+            });
     }
     
     getNotes () {
@@ -20,6 +31,9 @@ export class NotesService {
     }
     
     getNote (key) : Promise<Note> {
-        return this.getNotes().then( notes => notes.find(note => note.key === key) || null);
+        return this.getNotes().then( notes => 
+            notes.reduce((acc, noteList) => acc.concat(noteList), [])
+                 .find(note => note.key === key)
+            );
     }
 }
